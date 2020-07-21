@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "duyguji-client-font",
+  "version": "${version}",
+
+  "description": "Adds support for unicode emoji resource packs.",
+  "authors": [
+    "Ancurio"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Sturmlilie/duyguji-client-font",
+    "sources": "https://github.com/Sturmlilie/duyguji-client-font"
+  },
+
+  "license": "LGPLv3",
+
+  "environment": "client",
+  "entrypoints": {
+    "duyguji:input": [
+      "ancurio.duyguji.client.font.InputInit"
+    ]
+  },
+  "mixins": [
+    "duyguji-client-font.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.8.8",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "duyguji-client-input": ">=0.4.0"
+  }
+}

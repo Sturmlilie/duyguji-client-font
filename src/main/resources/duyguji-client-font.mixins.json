@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ancurio.duyguji.client.font.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "MixinFontStorage",
+    "MixinTextureFontLoader",
+    "MixinTextureFont",
+    "MixinMinecraftClient",
+    "MixinWorldRenderer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
