@@ -24,7 +24,6 @@ File.open("shortcodes.txt", 'w') do |stream|
         # since we can't handle them yet
         next if symbol.unpack('U*').length > 1
 
-        puts "#{symbol}[#{symbol.class}]/#{shortcode}[#{shortcode.class}]"
         shortcode = strip_colons(shortcode).gsub('_', '-')
         stream.puts "#{symbol}/#{shortcode}"
     end
