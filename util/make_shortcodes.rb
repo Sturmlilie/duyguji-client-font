@@ -22,7 +22,11 @@ File.open("shortcodes.txt", 'w') do |stream|
         next if symbol.empty? or shortcode.empty?
         # Filter out any emoji composed of multiple codepoints for now
         # since we can't handle them yet
-        next if symbol.unpack('U*').length > 1
+        sc_ary = symbol.unpack('U*')
+        next if sc_ary.length > 1
+        # Filter out emoji from plane 0 since we currently don't
+        # render them
+        next if sc_ary[0] >> 16 == 0
 
         shortcode = strip_colons(shortcode).gsub('_', '-')
         stream.puts "#{symbol}/#{shortcode}"
