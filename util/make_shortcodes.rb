@@ -28,7 +28,7 @@ File.open("shortcodes.txt", 'w') do |stream|
         # render them
         next if sc_ary[0] >> 16 == 0
 
-        shortcode = strip_colons(shortcode).gsub('_', '-')
+        shortcode = strip_colons(shortcode)
         stream.puts "#{symbol}/#{shortcode}"
     end
 end
