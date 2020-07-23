@@ -1,11 +1,14 @@
 package ancurio.duyguji.client.font;
 
 import ancurio.duyguji.client.input.api.Shortcode;
-import ancurio.duyguji.client.input.api.ShortcodeKey;
+import ancurio.duyguji.client.input.api.ShortcodeList;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import it.unimi.dsi.fastutil.ints.IntSet;
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import net.fabricmc.loader.launch.common.FabricLauncher;
 import net.fabricmc.loader.launch.common.FabricLauncherBase;
 
@@ -18,30 +21,33 @@ public class CommonShortcodes {
     public static void init() {
         ClientInit.log("Initializing shortcodes..");
 
-        InputStream stream = FabricLauncherBase.getLauncher().getResourceAsStream(SHORTCODE_LOCATION);
+        final InputStream stream = FabricLauncherBase.getLauncher().getResourceAsStream(SHORTCODE_LOCATION);
+        final InputStreamReader streamReader = new InputStreamReader(stream, StandardCharsets.UTF_8);
+        final BufferedReader bufferedReader = new BufferedReader(streamReader);
 
         shortcodes = new Int2ObjectOpenHashMap<Shortcode>();
-        Shortcode.readPairList(stream, '/',
-            shortcode -> shortcodes.put(Character.codePointAt(shortcode.symbol, 0), shortcode),
+
+        Shortcode.readPairList(bufferedReader, '/',
+            (symbol, code) -> shortcodes.put(Character.codePointAt(symbol, 0), new Shortcode(symbol, code)),
             ClientInit.commonLogger);
 
         ClientInit.log("done.");
     }
 
-    public static void applyToKey(final ShortcodeKey key, final IntSet glyphs) {
-        key.beginUpdate();
+    public static void applyToList(final ShortcodeList list, final IntSet glyphs) {
+        list.beginUpdate();
         int addedCount = 0;
 
         for (final int cp : glyphs) {
             final Shortcode code = shortcodes.get(cp);
 
             if (code != null) {
-                key.putEntry(code);
+                list.putEntry(code.symbol, code.code);
                 addedCount++;
             }
         }
 
-        key.endUpdate();
+        list.endUpdate();
         ClientInit.log("Applied {} shortcodes.", addedCount);
     }
 }
