@@ -2,13 +2,15 @@
 
 This mod adds emoji font rendering support to Minecraft. By default, it doesn't ship bundled with any fonts; these have to be installed separately in the form of **resource packs**.
 
+Note that even though this is a client-side only mod, your friends will not be able to see the emoji you type unless they also install the mod as well as a font. Servers don't need to install anything, and vanilla servers are compatible as well.
+
 ## Inputting emoji
 
-In order to actually input the emoji provided by installed packs, the [duyguji input module](https://github.com/Sturmlilie/duyguji-client-input) must be installed alongside. Shortcodes will be automatically inserted based on [this common list](https://gist.github.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb) by @oliveratgithub, licensed under the [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license.
+In order to actually input the emoji provided by installed packs, the [duyguji input module](https://github.com/Sturmlilie/duyguji-client-input), version `0.4.0` or higher, must be installed alongside. Shortcodes will be automatically inserted based on [this common list](https://gist.github.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb) by @oliveratgithub, licensed under the [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license.
 
-## Font resourcepacks
+## Font resource packs
 
-Below are a couple hand-picked, freely licensed emoji sets that are ready to be downloaded and installed! Download links are at the very bottom of each description. Note that if you install more than one set, they will be queried in an undefined order. Support for custom priority setting is planned.
+Below are a couple hand-picked, freely licensed emoji fonts that are ready to be downloaded and installed! Download links are at the very bottom of each description. Note that if you install more than one font, they will be queried in an undefined order. Support for custom priority setting is planned.
 
 ### [Twemoji](https://github.com/twitter/twemoji)
 
