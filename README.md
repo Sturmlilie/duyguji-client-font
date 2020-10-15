@@ -18,7 +18,7 @@ Twemoji was created by Twitter and is available under [CC-BY 4.0](https://creati
 
 ![twemoji_sample0](https://i.imgur.com/6G1sszN.png) ![tewmoji_sample1](https://i.imgur.com/BD88o4l.png)
 
-**[>Download Twemoji<](https://srv-file16.gofile.io/download/pDiVcz/twemoji_font.zip)**
+**[>Download Twemoji<](http://ancurio.bplaced.net/fabric/duyguji/emopacks/twemoji_font.zip)**
 
 ### [EmojiTwo](https://github.com/EmojiTwo/emojitwo)
 
@@ -26,7 +26,7 @@ Emojitwo is a fork of the [EmojiOne](https://github.com/joypixels/emojione) proj
 
 ![emojitwo_showcase0](https://i.imgur.com/u17I4sc.png) ![emojitwo_showcase1](https://i.imgur.com/uBIbUeI.png)
 
-**[>Download EmojiTwo<](https://srv-file16.gofile.io/download/pDiVcz/emojitwo_font.zip)**
+**[>Download EmojiTwo<](http://ancurio.bplaced.net/fabric/duyguji/emopacks/emojitwo_font.zip)**
 
 ### [OpenMoji](https://openmoji.org/)
 
@@ -34,7 +34,7 @@ OpenMoji is an open-source project of the HfG Schwäbisch Gmünd by Benedikt Gro
 
 ![openmoji_showcase0](https://i.imgur.com/OuJkf5c.png) ![openmoji_showcase1](https://i.imgur.com/F0sw3xW.png)
 
-**[>Download OpenMoji<](https://srv-file16.gofile.io/download/pDiVcz/openmoji_font.zip)**
+**[>Download OpenMoji<](http://ancurio.bplaced.net/fabric/duyguji/emopacks/openmoji_font.zip)**
 
 ### [Blobmoji](https://github.com/C1710/blobmoji)
 
@@ -42,7 +42,7 @@ A fork of [Noto-Emoji](https://github.com/googlefonts/noto-emoji) by Google, wit
 
 ![blobmoji_showcase0](https://i.imgur.com/rsZbiLx.png) ![blobmoji_showcase1](https://i.imgur.com/6pAPIU3.png)
 
-**[>Download Blobmoji<](https://srv-file16.gofile.io/download/pDiVcz/blobmoji_font.zip)**
+**[>Download Blobmoji<](http://ancurio.bplaced.net/fabric/duyguji/emopacks/blobmoji_font.zip)**
 
 ## License
 
